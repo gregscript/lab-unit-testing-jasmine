@@ -1,9 +1,4 @@
-function divide (numOne, numTwo) {
-    if(!numOne || !numTwo){
-        return undefined;
-    }
-    if(typeof numOne !== "number" || typeof numTwo !== "number"){
-        return undefined
-    }
-    return numOne/numTwo;
+divide = (num1,num2) => {
+    if(typeof num1 === "number" && typeof num2 === "number") return num1/num2;
+    return undefined;
 }
